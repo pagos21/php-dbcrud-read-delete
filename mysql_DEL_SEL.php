@@ -12,7 +12,7 @@
     $sql = "
     SELECT * FROM pagamenti
     ";
-    $sql = "
+    $sql1 = "
     DELETE FROM pagamenti
     WHERE id = 8
     ";
@@ -38,7 +38,7 @@
         // VERSIONE 2
         while($row = $result->fetch_assoc()) {
           //query0
-           echo $row['id'].": ".$row['status']." | ".$row['price'].'<br>';
+           echo $row['id']."--> ".$row['status']." || ".$row['price'].'<br>';
            //query2
            //echo "OK";
            // query3
